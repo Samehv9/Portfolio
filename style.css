@@ -312,7 +312,7 @@ body {
 
 /*  -------------- START SKILLS ----------------------------  */
 
-section {
+.section-skills {
   display: flex;
   flex-wrap: wrap;
 }
@@ -578,6 +578,7 @@ section {
 }
 
 .row {
+  height: 460px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -611,15 +612,16 @@ section {
 
 .layer h5 {
   color: #000;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .layer p {
   color: #000;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 .layer i {
@@ -805,6 +807,11 @@ form textarea {
   font-size: 20px;
   padding: 20px;
   border-radius: 50%;
+}
+
+.top:hover i {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 /* ------------------------------- END LAST ----------------------------- */
