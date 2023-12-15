@@ -987,21 +987,19 @@ form textarea {
   }
 
   #check:checked~.navbar {
-    height: 20rem;
+    height: 22rem;
   }
 
   .navbar a {
-    display: block;
+    display: none;
     font-size: 1.1rem;
     margin: 2.1rem;
     text-align: center;
     color: #0ef;
-    transform: translateY(-50px);
-    transition: 0.3s ease;
   }
 
-  #check:checked~.navbar a {
-    transform: translateY(0);
+  #check:checked~.navbar a{
+    display: block;
   }
 
   .navbar a:hover {
