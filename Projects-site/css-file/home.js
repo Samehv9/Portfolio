@@ -7,3 +7,10 @@ document.getElementById('next').onclick = function() {
         document.getElementById('slide').prepend(lists[lists.length - 1]);
     }
 }
+
+
+var loader = document.getElementsByClassName("loader")[0];
+
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
