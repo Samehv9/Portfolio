@@ -7,3 +7,10 @@ var typed = new Typed(".text", {
 });
 
 
+var loader = document.getElementsByClassName("loader")[0];
+
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
+
+

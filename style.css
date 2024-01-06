@@ -84,6 +84,7 @@ body {
   padding: 70px 10% 0;
   z-index: 20;
 }
+
 .home::before {
   content: "";
   display: block;
@@ -228,9 +229,11 @@ body {
   0% {
     transform: scale(.8);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(.8);
   }
@@ -285,7 +288,7 @@ body {
 }
 
 .services-list div h2 {
-  text-decoration: 5px  underline #0ef;
+  text-decoration: 5px underline #0ef;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -293,7 +296,7 @@ body {
 
 .services-list div p {
   font-size: 18px;
-} 
+}
 
 .services-list div a {
   text-decoration: none;
@@ -409,12 +412,15 @@ body {
 .html span {
   width: 95%;
 }
+
 .css span {
   width: 80%;
 }
+
 .javascript span {
   width: 50%;
 }
+
 .bootstrap span {
   width: 30%;
 }
@@ -435,12 +441,15 @@ body {
 .html span::after {
   content: "95%";
 }
+
 .css span::after {
   content: "80%";
 }
+
 .javascript span::after {
   content: "50%";
 }
+
 .bootstrap span::after {
   content: "30%";
 }
@@ -518,12 +527,15 @@ body {
 .path-1 {
   animation: animate-path1 1s 1s linear forwards;
 }
+
 .path-2 {
   animation: animate-path2 1s 1s linear forwards;
 }
+
 .path-3 {
   animation: animate-path3 1s 1s linear forwards;
 }
+
 .path-4 {
   animation: animate-path4 1s 1s linear forwards;
 }
@@ -533,16 +545,19 @@ body {
     stroke-dashoffset: 50;
   }
 }
+
 @keyframes animate-path2 {
   100% {
     stroke-dashoffset: 80;
   }
 }
+
 @keyframes animate-path3 {
   100% {
     stroke-dashoffset: 55;
   }
 }
+
 @keyframes animate-path4 {
   100% {
     stroke-dashoffset: 250;
@@ -832,16 +847,18 @@ form textarea {
 .top:hover i {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
     0 0 200px cyan;
-    animation: none;
+  animation: none;
 }
 
 @keyframes topMove {
   0% {
     transform: scale(.7);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(.7);
   }
@@ -856,6 +873,7 @@ form textarea {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -867,6 +885,7 @@ form textarea {
     transform: translateX(200px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -878,6 +897,7 @@ form textarea {
     transform: translateY(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
@@ -889,6 +909,7 @@ form textarea {
     transform: translateY(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
@@ -908,7 +929,7 @@ form textarea {
 ::-webkit-scrollbar-thumb {
   background: #0ef;
   border-radius: 20px;
-  
+
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -933,6 +954,7 @@ form textarea {
 #check {
   display: none;
 }
+
 /* Toggle button */
 
 @media (max-width: 992px) {
@@ -945,19 +967,22 @@ form textarea {
     width: 60px;
     box-shadow: none;
   }
+
 }
 
 @media (max-width: 768px) {
-/* ----------------RESET BODY ------------------*/
+
+  /* ----------------RESET BODY ------------------*/
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
   }
-/* ----------------RESET BODY ------------------*/
 
-/* ----------------------HEADER LINKS --------------- */
+  /* ----------------RESET BODY ------------------*/
+
+  /* ----------------------HEADER LINKS --------------- */
   .icons {
     display: inline-flex;
   }
@@ -997,16 +1022,16 @@ form textarea {
     color: #0ef;
   }
 
-  #check:checked~.navbar a{
+  #check:checked~.navbar a {
     display: block;
   }
 
   .navbar a:hover {
     text-shadow: none;
     font-size: 1.1rem
-}
+  }
 
-/* ------------HOME CONTENT --------------------- */
+  /* ------------HOME CONTENT --------------------- */
   .home {
     position: relative;
     width: 100%;
@@ -1048,94 +1073,164 @@ form textarea {
 
 
   .about-text h4 {
-  line-height: 1.1;
-  margin: 15px 0 20px;
-}
+    line-height: 1.1;
+    margin: 15px 0 20px;
+  }
 
   .about-text p {
-  line-height: 1.4;
-  margin-bottom: 4rem;
-  text-align: left;
-  padding: 10px;
-}
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: left;
+    padding: 10px;
+  }
 
-/* ----------------SURVICES SECTION-------------------- */
+  /* ----------------SURVICES SECTION-------------------- */
   .sub-title {
-  font-size: 45px;
-  padding: 50px 0;
-}
+    font-size: 45px;
+    padding: 50px 0;
+  }
 
   .container {
-  padding: 10px;
-}
+    padding: 10px;
+  }
 
 
   .services-list div i {
-  font-size: 35px;
-  margin-bottom: 20px;
-}
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
 
   .services-list div h2 {
-  text-decoration: 3px  underline #0ef;
-  font-size: 25px;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
+    text-decoration: 3px underline #0ef;
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
 
   .services-list div p {
-  font-size: 16px;
-  margin-bottom: 10px;
-} 
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 
-/*-------------------- SKILLS SECTION -------------------- */
+  /*-------------------- SKILLS SECTION -------------------- */
 
   .section-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.container1 {
-  position: relative;
-  width: 360px;
-  height: 500px;
-  padding: 5px;
-  margin: 0;
-}
+  }
+
+  .container1 {
+    position: relative;
+    width: 360px;
+    height: 500px;
+    padding: 5px;
+    margin: 0;
+  }
 
 
   .heading1 {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 
-/*--------------------------- CONTACT ME------------------------ */
+  /*--------------------------- CONTACT ME------------------------ */
 
   .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  .contact-text h2 {
-  font-size: 40px;
-  line-height: 1.1;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.contact-text h4 {
-  font-size: 18px;
-}
+  .contact-text h2 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .contact-text h4 {
+    font-size: 18px;
+  }
 
 
   .contact-text p {
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 1.5rem;
-}
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+  }
 
   .contact-list {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .last-text {
+    margin-top: 20px;
+  }
 }
 
-.last-text {
-  margin-top: 20px;
+
+
+/* LOADING PAGE */
+
+
+.loader {
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #081b29;
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
 }
+
+.ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 3px #0ef, 1px 5px 5px #0ef;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 3px #0ef, 1px 5px 5px #0ef;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 3px #0ef, 1px 5px 5px #0ef;
+  }
+
+}
+
+.ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 238, 255, 0.934);
+}
+
+.loading {
+  color: #0ef;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 200px;
+  animation: text 2s ease-in-out infinite;
+}
+
+@keyframes text {
+  50% {
+    color: #081b29;
+  }
 }
