@@ -1,3 +1,4 @@
+// Typed.js Initialization
 var typed = new Typed(".text", {
     strings: ["Website Designer.", "Front-End Developer."],
     typeSpeed: 100,
@@ -6,11 +7,25 @@ var typed = new Typed(".text", {
     loop: true
 });
 
+// Contact Form Submission
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-var loader = document.getElementsByClassName("loader")[0];
+  const status = document.getElementById("form-status");
+  status.textContent = "Sending...";
 
-window.addEventListener("load", function() {
-    loader.style.display = "none";
-})
-
-
+  emailjs.sendForm(
+    "service_psflg8r",
+    "template_pbth25p",
+    this,
+    "nGr94jSY7HCphGG7N"
+  ).then(
+    () => {
+      status.textContent = "Message sent successfully ✅";
+      this.reset();
+    },
+    () => {
+      status.textContent = "Failed to send message ❌";
+    }
+  );
+});

@@ -10,14 +10,14 @@
   <link rel="icon" href="img/sameh-ahmed-high-resolution-logo-transparent.png">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("nGr94jSY7HCphGG7N");
+  })();
+</script>
 
 <body>
-  <!-- Loading Page -->
-  <div class="loader">
-    <div class="ring"></div>
-    <span class="loading">Loading...</span>
-  </div>
-
   <!-- -------------- START LINKS ---------------------------- -->
   <header class="header">
     <a href="#" class="logo"><img src="img/sameh-ahmed-high-resolution-logo-cyan.png" alt=""></a>
@@ -27,7 +27,7 @@
       <i class='bx bx-menu-alt-right' id="menu-icon"></i>
       <i class='bx bx-x-circle' id="close-icon"></i>
     </label>
-        <!-- ------------------------TOGGLE BUTTON ----------------------------->
+    <!-- ------------------------TOGGLE BUTTON ----------------------------->
     <nav class="navbar">
       <a href="#home" style="--i:1" class="active">Home</a>
       <a href="#about" style="--i:2">About</a>
@@ -48,7 +48,7 @@
       <h1>Sameh Ahmed</h1>
       <h3>And I'm a <span class="text"></span></h3>
       <p>
-        I'm a web designer with experience for over 3 years. <br />expertise
+        I'm a web Designer with experience for over 2 years. <br />expertise
         is to create and website design, front-end developer, and many more....
       </p>
       <div class="home-sci">
@@ -60,7 +60,7 @@
         <a href="https://web.facebook.com/kaisa.only.one/" target="”_blank”" style="--i: 11"><i
             class="bx bxl-facebook"></i></a>
       </div>
-      <a href="#services" class="btn-box">More About Me</a>
+      <a href="#project" class="btn-box">More About Me</a>
     </div>
     <span class="home-imgHover"></span>
   </section>
@@ -81,7 +81,7 @@
         producing quality work, producing smooth styling for the website, Have
         done a lot of projects using HTML, CSS, JavaScript.
       </p>
-      <a href="#services" class="btn-box">More About Me</a>
+      <a href="#skills" class="btn-box">More About Me</a>
     </div>
   </section>
 
@@ -100,7 +100,7 @@
             <p>
               Editing and creating responsive and animated websites using ( HTML, CSS ).
             </p>
-            <a href="Projects-site/css-file/home.html" class="read">learn more</a>
+            <a href="Projects-site/css-file/home.html" target="_blank" class="read">learn more</a>
           </div>
           <div>
             <i class="bx bx-crop" style="color: #00eeff"></i>
@@ -114,7 +114,8 @@
             <i class="bx bxl-apple" style="color: #00eeff"></i>
             <h2>UI/UX Design</h2>
             <p>
-              Capable of creating good looking creative websites for who doesn't have specific sketch for their own business, Fixing and editing the style for who wants to make some changes on their old work websites.
+              Capable of creating good looking creative websites for who doesn't have specific sketch for their own
+              business, Fixing and editing the style for who wants to make some changes on their old work websites.
             </p>
             <a href="#project" class="read">learn more</a>
           </div>
@@ -269,7 +270,7 @@
       <p>
         Fast and good quality projects for your company, Hit me with a message and leave the hard work for me.</p>
       <div class="contact-list">
-        <li><i class='bx bxl-gmail' ></i> sameh.av6@gmail.com</li>
+        <li><i class='bx bxl-gmail'></i> sameh.av6@gmail.com</li>
         <li><i class="bx bxl-whatsapp"></i> (+20) 111 957 5034</li>
       </div>
       <div class="contact-icons">
@@ -281,15 +282,22 @@
             class="bx bxl-facebook"></i></a>
       </div>
     </div>
-    <div class="contact-form">
-      <!-- <form action="" method="POST">
-        <input type="text" placeholder="Enter Your Name" id="name" required />
-        <input type="email" placeholder="Enter Your E-mail" id="email" required />
-        <input type="text" placeholder="Enter Your Subject" required id="subject" />
-        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required id="message"></textarea>
-        <input type="submit" value="submit" class="send"/>
-      </form> -->
-    </div>
+<div class="contact-form">
+  <form id="contact-form">
+    <input type="text" name="from_name" id="name" placeholder="Enter Your Name" required />
+
+    <input type="email" name="reply_to" id="email" placeholder="Enter Your E-mail" required />
+
+    <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" required />
+
+    <textarea name="message" id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+
+    <input type="submit" value="Submit" class="send" />
+  </form>
+
+  <p id="form-status"></p>
+</div>
+
   </section>
 
   <!-- ---------------------END CONTACT------------------------- -->
@@ -298,7 +306,7 @@
 
   <div class="last-text">
     <img src="img/sameh-ahmed-high-resolution-logo-black-.png" alt="" />
-    <p>Developed by <strong>Sameh Ahmed</strong> &copy; 2023 - 2025</p>
+    <p>Developed by <strong>Sameh Ahmed</strong> &copy; 2023</p>
   </div>
 
   <a href="#home" class="top"><i class="bx bx-up-arrow-alt"></i></a>
