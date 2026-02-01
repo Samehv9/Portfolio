@@ -37,13 +37,15 @@ body {
   animation: slideRight 1s ease forwards;
   transition: 0.5s ease;
   border-radius: 50%;
-
 }
 
 .logo img:hover {
   width: 75px;
   color: #0ef;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 25px #0ef,
+    0 0 50px;
 }
 
 .navbar a {
@@ -62,7 +64,10 @@ body {
 
 .navbar a:hover {
   color: #0ef;
-  text-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px;
+  text-shadow:
+    0 0 5px #0ef,
+    0 0 25px #0ef,
+    0 0 50px;
   font-size: 30px;
 }
 
@@ -132,6 +137,7 @@ body {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
+  text-align: left !important;
 }
 
 .home-sci a {
@@ -172,11 +178,17 @@ body {
   opacity: 0;
   animation: slideBottom 0.5s ease forwards;
   animation-delay: 1.5s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -226,13 +238,13 @@ body {
 
 @keyframes imgScale {
   0% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 }
 
@@ -275,8 +287,12 @@ body {
   font-size: 13px;
   border-right: 10px;
   border-radius: 20px;
-  transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #012290f7;
+  transition:
+    background 0.5s,
+    transform 0.5s;
+  box-shadow:
+    1px 1px 20px #012290f7,
+    1px 1px 40px #012290f7;
 }
 
 .services-list div i {
@@ -285,7 +301,7 @@ body {
 }
 
 .services-list div h2 {
-  text-decoration: 5px  underline #0ef;
+  text-decoration: 5px underline #0ef;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -293,7 +309,7 @@ body {
 
 .services-list div p {
   font-size: 18px;
-} 
+}
 
 .services-list div a {
   text-decoration: none;
@@ -316,11 +332,17 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 
 .read:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -785,11 +807,17 @@ form textarea {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
 }
 
@@ -830,20 +858,24 @@ form textarea {
 }
 
 .top:hover i {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+  box-shadow:
+    0 0 5px cyan,
+    0 0 25px cyan,
+    0 0 50px cyan,
+    0 0 100px cyan,
     0 0 200px cyan;
-    animation: none;
+  animation: none;
 }
 
 @keyframes topMove {
   0% {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 }
 
@@ -908,7 +940,6 @@ form textarea {
 ::-webkit-scrollbar-thumb {
   background: #0ef;
   border-radius: 20px;
-  
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -928,15 +959,12 @@ form textarea {
   right: 5%;
 }
 
-
-
 #check {
   display: none;
 }
 /* Toggle button */
 
 @media (max-width: 992px) {
-
   .header {
     padding: 1.3rem 5%;
   }
@@ -945,24 +973,28 @@ form textarea {
     width: 60px;
     box-shadow: none;
   }
+
+  .home-content p {
+    text-align: center !important;
+  }
 }
 
 @media (max-width: 768px) {
-/* ----------------RESET BODY ------------------*/
+  /* ----------------RESET BODY ------------------*/
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     position: relative;
   }
-/* ----------------RESET BODY ------------------*/
+  /* ----------------RESET BODY ------------------*/
 
-/* ----------------------HEADER LINKS --------------- */
+  /* ----------------------HEADER LINKS --------------- */
   .icons {
     display: inline-flex;
   }
 
-  #check:checked~.icons #menu-icon {
+  #check:checked ~ .icons #menu-icon {
     display: none;
   }
 
@@ -970,7 +1002,7 @@ form textarea {
     display: none;
   }
 
-  #check:checked~.icons #close-icon {
+  #check:checked ~ .icons #close-icon {
     display: block;
   }
 
@@ -985,7 +1017,7 @@ form textarea {
     overflow: hidden;
   }
 
-  #check:checked~.navbar {
+  #check:checked ~ .navbar {
     height: 22rem;
   }
 
@@ -997,16 +1029,16 @@ form textarea {
     color: #0ef;
   }
 
-  #check:checked~.navbar a{
+  #check:checked ~ .navbar a {
     display: block;
   }
 
   .navbar a:hover {
     text-shadow: none;
-    font-size: 1.1rem
-}
+    font-size: 1.1rem;
+  }
 
-/* ------------HOME CONTENT --------------------- */
+  /* ------------HOME CONTENT --------------------- */
   .home {
     position: relative;
     width: 100%;
@@ -1031,7 +1063,7 @@ form textarea {
   }
 
   .home-content p {
-    text-align: left;
+    text-align: center !important;
   }
 
   /* -------------------ABOUR CONTENT ---------------------*/
@@ -1046,114 +1078,321 @@ form textarea {
     font-size: 40px;
   }
 
-
   .about-text h4 {
-  line-height: 1.1;
-  margin: 15px 0 20px;
-}
+    line-height: 1.1;
+    margin: 15px 0 20px;
+  }
 
   .about-text p {
-  line-height: 1.4;
-  margin-bottom: 4rem;
-  text-align: left;
-  padding: 10px;
-}
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: left;
+    padding: 10px;
+  }
 
-/* ----------------SURVICES SECTION-------------------- */
+  /* ----------------SURVICES SECTION-------------------- */
   .sub-title {
-  font-size: 45px;
-  padding: 50px 0;
-}
+    font-size: 45px;
+    padding: 50px 0;
+  }
 
   .container {
-  padding: 10px;
-}
-
+    padding: 10px;
+  }
 
   .services-list div i {
-  font-size: 35px;
-  margin-bottom: 20px;
-}
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
 
   .services-list div h2 {
-  text-decoration: 3px  underline #0ef;
-  font-size: 25px;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
+    text-decoration: 3px underline #0ef;
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
 
   .services-list div p {
-  font-size: 16px;
-  margin-bottom: 10px;
-} 
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 
-/*-------------------- SKILLS SECTION -------------------- */
+  /*-------------------- SKILLS SECTION -------------------- */
 
   .section-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.container1 {
-  position: relative;
-  width: 360px;
-  height: 500px;
-  padding: 5px;
-  margin: 0;
-}
-
+  }
+  .container1 {
+    position: relative;
+    width: 360px;
+    height: 500px;
+    padding: 5px;
+    margin: 0;
+  }
 
   .heading1 {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 
-/*--------------------------- CONTACT ME------------------------ */
+  /*--------------------------- CONTACT ME------------------------ */
 
-  .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  .contact-text h2 {
-  font-size: 40px;
-  line-height: 1.1;
-}
-
-.contact-text h4 {
-  font-size: 18px;
-}
-
-
-  .contact-text p {
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 1.5rem;
-}
-
-  .contact-list {
-  margin-bottom: 1rem;
-}
-
-.last-text {
-  margin-top: 20px;
-}
-
-/* Add responsive styles for mobile view */
-@media (max-width: 768px) {
   .contact {
     display: flex;
-    flex-direction: column; /* Force stacking of elements */
-    align-items: center; /* Center-align content */
-    gap: 2rem; /* Add spacing between sections */
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-text h2 {
+    font-size: 40px;
+    line-height: 1.1;
   }
 
-  .contact-text {
-    text-align: center; /* Ensure text is centered */
+  .contact-text h4 {
+    font-size: 18px;
   }
 
-  .contact-form {
-    width: 100%; /* Ensure form takes full width */
+  .contact-text p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-list {
+    margin-bottom: 1rem;
+  }
+
+  .last-text {
+    margin-top: 20px;
+  }
+
+  /* Add responsive styles for mobile view */
+  @media (max-width: 768px) {
+    .contact {
+      display: flex;
+      flex-direction: column; /* Force stacking of elements */
+      align-items: center; /* Center-align content */
+      gap: 2rem; /* Add spacing between sections */
+    }
+
+    .contact-text {
+      text-align: center; /* Ensure text is centered */
+    }
+
+    .contact-form {
+      width: 100%; /* Ensure form takes full width */
+    }
   }
 }
+
+/* -------------------- PATCH: Mobile width + Contact alignment (2026-01-31) -------------------- */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact text LEFT (desktop/tablet) */
+.contact-text,
+.contact-text h2 {
+  text-align: left;
+}
+
+/* Keep the form centered */
+.contact-form form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+  width: 100%;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prevent skills container from forcing overflow on small screens */
+@media (max-width: 768px) {
+  .container1 {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* Contact: keep text left, form centered */
+  .contact-text {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* === Fix: Contact button centered + form layout === */
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+}
+
+.contact-btn {
+  display: block;
+  margin: 18px auto 0;
+  text-align: center;
+}
+
+/* === PATCH v3: Center send button + iPad toggle breakpoint (2026-01-31) === */
+
+/* Center the send button (it is an <input type="submit" class="send">) */
+.contact-form form .send {
+  display: block;
+  margin: 18px auto 0;
+  align-self: center;
+}
+
+/* Remove left offset on small screens so the form/button is truly centered */
+@media (max-width: 768px) {
+  .contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-text {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* Make the header/nav collapse into toggle on tablets like iPad (820px) */
+@media (max-width: 992px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    height: 0;
+    background-color: #000000;
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+
+  #check:checked ~ .navbar {
+    height: 22rem;
+  }
+
+  .navbar a {
+    display: none;
+    font-size: 1.1rem;
+    margin: 2.1rem;
+    text-align: center;
+    color: #0ef;
+  }
+
+  #check:checked ~ .navbar a {
+    display: block;
+  }
+}
+
+/* === Update v4: Contact padding + Hero paragraph center === */
+
+/* Contact form padding (mobile + tablet safe) */
+.contact-form {
+  padding: 20px 16px;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    padding: 24px 32px;
+  }
+}
+
+/* Hero paragraph centered */
+.home p,
+.hero p,
+.home-content p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Update v5: Center hero only on mobile & tablet === */
+
+@media (max-width: 991px) {
+  .home-content,
+  .hero,
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ===== RESPONSIVE FIXES (SAFE) ===== */
+
+/* HERO / WELCOME SECTION (KEEP LAYOUT, ONLY ALIGN TEXT) */
+.hero,
+.home,
+.welcome {
+  text-align: left; /* desktop: left text */
+}
+
+@media (max-width: 768px) {
+  .hero,
+  .home,
+  .welcome {
+    text-align: center; /* mobile: keep centered */
+  }
+}
+
+/* CONTACT SECTION MOBILE MARGIN */
+@media (max-width: 768px) {
+  .contact,
+  .contact-section,
+  .contact-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
 }
